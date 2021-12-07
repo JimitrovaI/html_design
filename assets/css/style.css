@@ -1,0 +1,32 @@
+a{
+    text-decoration: none;
+}
+.body-container{
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.bg-left-section{
+    background: #f1cdd7;
+    color: #865c6c;
+    width: 768px;
+}
+
+@media (max-height: 768px){
+    .bg-left-section .left-img {
+        display: none
+    }
+    section.main-content{
+        justify-content: normal !important;
+    }
+}
+@media (max-height: 436px) and (min-width: 768px) {
+    .bg-left-section{
+        background: none;
+        color: #865c6c;
+        width: 768px;
+        
+    }
+}
